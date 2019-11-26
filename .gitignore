@@ -16,3 +16,6 @@ yarn-error.log
 /app/Http/Controllers/TestController.php
 /resources/views/test.blade.php
 _ide_helper.php
+/public/*
+/public
+public/
