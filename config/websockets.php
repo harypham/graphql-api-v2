@@ -29,7 +29,7 @@ return [
             'secret' => env('PUSHER_APP_SECRET'),
             'path' => env('PUSHER_APP_PATH'),
             'capacity' => null,
-            'enable_client_messages' => false,
+            'enable_client_messages' => true,
             'enable_statistics' => true,
         ],
     ],
@@ -131,5 +131,5 @@ return [
      * The only requirement is that the class should implement
      * `ChannelManager` interface provided by this package.
      */
-    'channel_manager' => \App\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
+    'channel_manager' => \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManagers\ArrayChannelManager::class,
 ];

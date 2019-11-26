@@ -36725,8 +36725,8 @@ function (_ApolloLink) {
     _this.subscriptions = [];
     _this.echo = new laravel_echo_dist_echo__WEBPACK_IMPORTED_MODULE_1__["default"]({
       broadcaster: 'pusher',
-      key: "",
-      cluster: "mt1",
+      key: "dd706a331aebd42a1111",
+      cluster: "ap1",
       authEndpoint: "graphql/subscriptions/auth",
       wsHost: window.location.hostname,
       wsPort: 6001,

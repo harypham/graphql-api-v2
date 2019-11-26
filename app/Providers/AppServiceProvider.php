@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->registerWebSockets();
+       //
     }
 
     /**
@@ -24,13 +24,5 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-    }
-
-
-    protected function registerWebSockets()
-    {
-        $this->app->singleton('websockets.router', function () {
-            return new \App\WebSockets\Server\Router();
-        });
     }
 }
